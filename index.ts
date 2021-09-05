@@ -13,7 +13,7 @@ function handleRequest(request) {
 
     return new Response(json, {
         headers: {
-            "content-type": "application/json; charset=UTF-8",
+            "Content-Type": "application/json; charset=UTF-8",
         },
     });
 }
