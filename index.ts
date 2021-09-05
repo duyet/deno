@@ -1,4 +1,4 @@
-import api from './api';
+import api from './api/index.ts';
 
 function handleRequest(request) {
     const { pathname } = new URL(request.url);
