@@ -1,4 +1,5 @@
-import api from './api/index.ts';
+import api from './api/mod.ts';
+import blog from './blog/mod.ts';
 
 function handleRequest(request) {
     const { pathname } = new URL(request.url);
@@ -6,9 +7,13 @@ function handleRequest(request) {
     if (pathname.startsWith("/api")) {
         return api
     }
+    
+    if (pathname.startsWith("/blog")) {
+        return blog
+    }
 
     const json = JSON.stringify({
-        message: "Hello :))",
+        message: "Hello :)",
     });
 
     return new Response(json, {
