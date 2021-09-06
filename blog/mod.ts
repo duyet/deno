@@ -1,3 +1,3 @@
-const resp = new Response.redirect("https://deno.com/deploy", 302);
+const resp = Response.redirect("https://blog.duyet.net", 302);
 
 export default resp;
