@@ -14,6 +14,8 @@ function handleRequest(request) {
 
     const json = JSON.stringify({
         message: "Hello :)",
+        name: "Duyet",
+        blog: "https://blog.duyet.net"
     });
 
     return new Response(json, {
