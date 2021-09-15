@@ -1,6 +1,6 @@
 const json = JSON.stringify({
-  message: 'Hello from /api'
-})
+  message: "Hello from /api",
+});
 
 const resp = new Response(json, {
   headers: {
